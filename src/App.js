@@ -7,7 +7,7 @@ import Error from './components/Error/Error';
 import  Form from './components/Form/Form.jsx'
 import { Routes , Route, useLocation, useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react' 
-import { Favorites } from './components/Favorites/Favorites';
+import { Favorites }  from './components/Favorites/Favorites.jsx';
 
 
 
@@ -45,7 +45,7 @@ function App() {
 
   const [access, setAccess] = useState(false);
   const username = 'ejemplo@gmail.com';
-  const password = '1password';
+  const password = '';
 
   function login(userData) {
     if (userData.password === password && userData.username === username) {
@@ -55,7 +55,7 @@ function App() {
 }
   useEffect(() => {
     !access && navigate('/');
-    }, [access]);
+    }, [access, navigate]);
 
   function logOut(){
     setAccess(false);
@@ -63,7 +63,7 @@ function App() {
   }  
 
   return (
-    <div className='App' style={{ padding: '25px' }}>
+    <div className='App'>
       {location.pathname !=="/"} && <Nav onSearch={onSearch} random={random} logOut={logOut}/>
       
       <Routes>

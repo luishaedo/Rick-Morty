@@ -24,10 +24,10 @@ export default function SearchBar(props) {
                   onClick={props.random}>
                   Random
          </button>
-         <button  className={styles.buttonBar}
-                  onClick={props.favorites}>
+         <Link  className={styles.links}
+                  to = '/Favorites'>
                   Favorites
-         </button>
+         </Link>
          <Link className={styles.links}
                to = '/Home'>
                Home
