@@ -1,0 +1,23 @@
+.divCards{
+    
+    display: inline-block;
+    padding: 10px;
+}
+
+.divH3Cards{
+    opacity: 80%;
+    background-color: grey;
+}
+.h3Cards{
+    
+    font-size: 40px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 3px 3px #000000;
+}
+
